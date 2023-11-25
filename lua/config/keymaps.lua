@@ -8,7 +8,7 @@ vim.keymap.set("i", "jj", "<Esc>", opt)
 vim.keymap.set("i", "kk", "<Esc>", opt)
 -- 快速移动
 vim.keymap.set("n", "<C-u>", "9k", opt)
-vim.keymap.set("n", "<C-d>", "9j", opt)
+vim.keymap.set("n", "<C-i>", "9j", opt)
 -- 在visual模式下选中代码块
 vim.keymap.set("v", "<", "<gv", opt)
 vim.keymap.set("v", ">", ">gv", opt)
