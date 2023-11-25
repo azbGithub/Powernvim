@@ -9,7 +9,7 @@ return {
       -- Your config here
     })
   end,
-  -- Configure LazyVim to load gruvbox
+  -- Configure LazyVim to load everforest
   {
     "LazyVim/LazyVim",
     opts = {
