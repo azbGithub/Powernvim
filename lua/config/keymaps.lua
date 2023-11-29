@@ -13,19 +13,21 @@ vim.keymap.set("n", "<c-i>", "9j", opts)
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 -- 分屏
-vim.keymap.set("n", "<leader>wv", ":vsp<cr>", opts)
-vim.keymap.set("n", "<leader>wh", ":sp<cr>", opts)
+vim.keymap.set("n", "<leader>wv", ":vsp<cr>", { desc = "split window right" })
+vim.keymap.set("n", "<leader>wh", ":sp<cr>", { desc = "split window down" })
 -- 关闭当前 / 其他 分屏
-vim.keymap.set("n", "<leader>wc", "<c-w>c", opts)
-vim.keymap.set("n", "<leader>wo", "<c-w>o", opts) -- close others
-
-vim.keymap.set("n", "<leader>h", "^", opts)
-vim.keymap.set("n", "<leader>l", "$", opts)
+vim.keymap.set("n", "<leader>wc", "<c-w>c", { desc = "close window" })
+vim.keymap.set("n", "<leader>wo", "<c-w>o", { desc = "split window others" }) -- close others
+-- 移动
+vim.keymap.set("n", "<leader>h", "^", { desc = "move to the far left of the line" })
+vim.keymap.set("n", "<leader>l", "$", { desc = "move to the far right of the line" })
 vim.keymap.set("n", "<c-l>", "<c-w>l", opts)
 vim.keymap.set("n", "<c-h>", "<c-w>h", opts)
 vim.keymap.set("n", "<c-j>", "<c-w>j", opts)
 vim.keymap.set("n", "<c-k>", "<c-w>k", opts)
 vim.keymap.set("n", "<c-a>", "gg<s-v>G", opts)
+-- 复制
+vim.keymap.set("n", "Y", "y$", { desc = "yank to the end of line" })
 -- https://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
 vim.keymap.set("n", "j", [[v:count ? 'j' : 'gj']], { noremap = true, expr = true })
 vim.keymap.set("n", "k", [[v:count ? 'k' : 'gk']], { noremap = true, expr = true })
