@@ -12,12 +12,10 @@ vim.keymap.set("n", "<c-i>", "9j", opts)
 -- 在visual模式下选中代码块
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
--- 分屏
-vim.keymap.set("n", "<leader>wv", ":vsp<cr>", { desc = "split window right" })
-vim.keymap.set("n", "<leader>wh", ":sp<cr>", { desc = "split window down" })
+-- 分屏按照默认配置即可
 -- 关闭当前 / 其他 分屏
 vim.keymap.set("n", "<leader>wc", "<c-w>c", { desc = "close window" })
-vim.keymap.set("n", "<leader>wo", "<c-w>o", { desc = "split window others" }) -- close others
+vim.keymap.set("n", "<leader>wo", "<c-w>o", { desc = "close window others" }) -- close others
 -- 移动
 vim.keymap.set("n", "<leader>h", "^", { desc = "move to the far left of the line" })
 vim.keymap.set("n", "<leader>l", "$", { desc = "move to the far right of the line" })
