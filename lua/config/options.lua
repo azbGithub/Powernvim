@@ -15,5 +15,14 @@ set.shell = "pwsh"
 set.shellcmdflag = "-command"
 set.shellquote = '"'
 set.shellxquote = ""
-set.scrolloff = 0
-vim.g.transparent_background = true
+set.scrolloff = 8
+set.sidescrolloff = 8
+set.ignorecase = true
+set.smartcase = true
+set.cmdheight = 2
+set.backup = false
+set.writebackup = false
+set.swapfile = false
+-- utf-8
+vim.g.encoding = "UTF-8"
+vim.g.fileencoding = "utf-8"

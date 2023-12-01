@@ -1,8 +1,8 @@
-return {
-  "folke/tokyonight.nvim",
-  lazy = true,
-  opts = { style = "moon" },
-}
+-- return {
+--   "folke/tokyonight.nvim",
+--   lazy = true,
+--   opts = { style = "moon" },
+-- }
 -- return {
 --   "catppuccin/nvim",
 --   lazy = true,
@@ -51,42 +51,41 @@ return {
 --     },
 --   },
 -- }
--- return {
---   "ellisonleao/gruvbox.nvim",
---   config = true,
---   opts = {
---     terminal_colors = true, -- add neovim terminal colors
---     undercurl = true,
---     underline = true,
---     bold = true,
---     italic = {
---       strings = true,
---       emphasis = true,
---       comments = true,
---       operators = false,
---       folds = true,
---     },
---     strikethrough = true,
---     invert_selection = false,
---     invert_signs = false,
---     invert_tabline = false,
---     invert_intend_guides = false,
---     inverse = true, -- invert background for search, diffs, statuslines and errors
---     contrast = "soft", -- can be "hard", "soft" or empty string
---     palette_overrides = {},
---     overrides = {},
---     dim_inactive = false,
---     transparent_mode = false,
---   },
---   {
---     "LazyVim/LazyVim",
---     opts = {
---       colorscheme = "gruvbox",
---     },
---   },
--- }
-
--- solarized-osaka theme
+--
+return {
+  "ellisonleao/gruvbox.nvim",
+  config = true,
+  opts = {
+    terminal_colors = true, -- add neovim terminal colors
+    undercurl = true,
+    underline = true,
+    bold = true,
+    italic = {
+      strings = true,
+      emphasis = true,
+      comments = true,
+      operators = false,
+      folds = true,
+    },
+    strikethrough = true,
+    invert_selection = false,
+    invert_signs = false,
+    invert_tabline = false,
+    invert_intend_guides = false,
+    inverse = true, -- invert background for search, diffs, statuslines and errors
+    contrast = "hard", -- can be "hard", "soft" or empty string
+    palette_overrides = {},
+    overrides = {},
+    dim_inactive = false,
+    transparent_mode = false,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
+    },
+  },
+}
 -- return {
 --   "craftzdog/solarized-osaka.nvim",
 --   lazy = false,
@@ -103,7 +102,6 @@ return {
 --   },
 -- }
 
--- everforest theme
 -- return {
 --   "neanias/everforest-nvim",
 --   version = false,
