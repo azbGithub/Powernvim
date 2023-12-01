@@ -17,7 +17,7 @@ return {
     },
   },
 }
-
+-- NOTE: nightfox theme
 -- return {
 --   "EdenEast/nightfox.nvim",
 --   {
@@ -27,13 +27,13 @@ return {
 --     },
 --   },
 -- }
---
+-- NOTE: tokyonight theme
 -- return {
 --   "folke/tokyonight.nvim",
 --   lazy = true,
 --   opts = { style = "moon" },
 -- }
-
+-- NOTE: catppuccin theme
 -- return {
 --   "catppuccin/nvim",
 --   lazy = true,
@@ -82,7 +82,7 @@ return {
 --     },
 --   },
 -- }
---
+--NOTE: gruvbox theme
 -- return {
 --   "ellisonleao/gruvbox.nvim",
 --   config = true,
@@ -117,6 +117,7 @@ return {
 --     },
 --   },
 -- }
+-- NOTE: solarized theme
 -- return {
 --   "craftzdog/solarized-osaka.nvim",
 --   lazy = false,
