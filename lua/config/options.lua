@@ -16,3 +16,4 @@ set.shellcmdflag = "-command"
 set.shellquote = '"'
 set.shellxquote = ""
 set.scrolloff = 0
+vim.g.transparent_background = true
