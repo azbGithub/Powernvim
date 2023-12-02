@@ -3,42 +3,58 @@ return {
   requires = { "nvim-tree/nvim-web-devicons", opt = true },
   opts = {
     options = {
-      icons_enabled = true,
-      theme = "everforest",
-      component_separators = { left = "", right = "" },
-      section_separators = { left = "", right = "" },
-      disabled_filetypes = {
-        statusline = {},
-        winbar = {},
+      -- 指定皮肤
+      -- https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
+      theme = "auto",
+      -- 分割线
+      -- component_separators = '|',
+      component_separators = {
+        left = "|", --" or | or "
+        right = "", --" or | or "
       },
-      ignore_focus = {},
-      always_divide_middle = true,
-      globalstatus = false,
-      refresh = {
-        statusline = 1000,
-        tabline = 1000,
-        winbar = 1000,
+      -- https://github.com/ryanoasis/powerline-extra-symbols
+      section_separators = {
+        left = "", --"  or  or ",
+        right = "", --" or  or ",
       },
+      globalstatus = true,
     },
+    extensions = { "nvim-tree" },
     sections = {
-      lualine_a = { "mode" },
-      lualine_b = { "branch", "diff", "diagnostics" },
-      lualine_c = { "filename" },
-      lualine_x = { "encoding", "fileformat", "filetype" },
-      lualine_y = { "progress" },
-      lualine_z = { "location" },
+      lualine_a = {
+        {
+          "mode",
+          separator = { left = "" },
+          right_padding = 2,
+        },
+      },
+      lualine_c = {
+        "filename",
+        {
+          "lsp_progress",
+          spinner_symbols = { "󰇊", "󰇋", "󰇌", "󰇍", "󰇎", "󰇏" },
+        },
+      },
+      lualine_x = {
+        "filesize",
+        "encoding",
+        {
+          "fileformat",
+          symbols = {
+            unix = "", -- e712
+            dos = "", -- e70f
+            mac = "", -- e711
+          },
+        },
+        "filetype",
+      },
+      lualine_z = {
+        {
+          "location",
+          separator = { right = "" },
+          left_padding = 2,
+        },
+      },
     },
-    inactive_sections = {
-      lualine_a = {},
-      lualine_b = {},
-      lualine_c = { "filename" },
-      lualine_x = { "location" },
-      lualine_y = {},
-      lualine_z = {},
-    },
-    tabline = {},
-    winbar = {},
-    inactive_winbar = {},
-    extensions = {},
   },
 }
