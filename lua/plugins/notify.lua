@@ -1,6 +1,6 @@
 return {
   "rcarriga/nvim-notify",
-  event = "VeryLazy",
+  event = "BufEnter",
   keys = {
     {
       "<leader>un",
