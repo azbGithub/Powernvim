@@ -1,4 +1,16 @@
 -- return {
+--   "craftzdog/solarized-osaka.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {},
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       colorscheme = "solarized-osaka",
+--     },
+--   },
+-- }
+-- return {
 --   "ellisonleao/gruvbox.nvim",
 --   config = true,
 --   opts = {
@@ -23,7 +35,7 @@
 --     palette_overrides = {},
 --     overrides = {},
 --     dim_inactive = false,
---     transparent_mode = false,
+--     transparent_mode = true,
 --   },
 --   {
 --     "LazyVim/LazyVim",

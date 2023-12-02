@@ -2,7 +2,7 @@ return {
   "CRAG666/code_runner.nvim",
   keys = {
     {
-      "<leader>r",
+      "<leader>rr",
       "<cmd>RunCode<CR>",
       desc = "run code",
     },
