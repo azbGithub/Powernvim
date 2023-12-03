@@ -1,4 +1,4 @@
 return {
-  "RRethy/vim-illuminate",
+  "nvim-treesitter/nvim-treesitter-context",
   enabled = false,
 }

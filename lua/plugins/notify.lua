@@ -23,7 +23,7 @@ return {
     -- Render function for notifications. See notify-render()
     render = "default",
     -- Default timeout for notifications
-    timeout = 3000,
+    timeout = 2000,
     -- Max number of columns for messages
     max_width = nil,
     -- Max number of lines for a message
