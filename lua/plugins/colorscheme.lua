@@ -1,24 +1,26 @@
 -- NOTE: onedark
-return {
-  "joshdick/onedark.vim",
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "onedark",
-    },
-  },
-}
--- NOTE: everforest
 
 -- return {
---   "sainnhe/everforest",
+--   "joshdick/onedark.vim",
 --   {
 --     "LazyVim/LazyVim",
 --     opts = {
---       colorscheme = "everforest",
+--       colorscheme = "onedark",
 --     },
 --   },
 -- }
+
+-- NOTE: everforest
+
+return {
+  "sainnhe/everforest",
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "everforest",
+    },
+  },
+}
 
 -- NOTE: nightfox
 
@@ -116,7 +118,7 @@ return {
 --     invert_tabline = false,
 --     invert_intend_guides = false,
 --     inverse = true, -- invert background for search, diffs, statuslines and errors
---     contrast = "hard", -- can be "hard", "soft" or empty string
+--     contrast = "soft", -- can be "hard", "soft" or empty string
 --     palette_overrides = {},
 --     overrides = {},
 --     dim_inactive = false,
