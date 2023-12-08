@@ -6,6 +6,11 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 vim.keymap.set("i", "jj", "<esc>", opts)
 vim.keymap.set("i", "kk", "<esc>", opts)
+--
+-- FIX:
+-- vim.keymap.set("i", "H", "^", { desc = "move to the far left of the line" })
+-- vim.keymap.set("i", "L", "$", { desc = "move to the far right of the line" })
+--
 -- 快速移动
 vim.keymap.set("n", "<c-u>", "9k", opts)
 vim.keymap.set("n", "<c-i>", "9j", opts)
