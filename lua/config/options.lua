@@ -11,7 +11,7 @@ set.shiftwidth = 2
 set.number = true
 set.clipboard = "unnamed"
 -- set terminal to powershell7
-set.shell = "pwsh -nologo"
+set.shell = "pwsh"
 set.shellcmdflag = "-command"
 set.shellquote = '"'
 set.shellxquote = ""
